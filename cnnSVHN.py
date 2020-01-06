@@ -52,12 +52,6 @@ y_test = test_data_mat['y']
 x_train = np.transpose(x_train, (3, 0, 1, 2))
 x_test = np.transpose(x_test, (3, 0, 1, 2))
 
-# x_train = x_train[:73257]
-# x_test = x_test[:1000]
-#
-# y_train = y_train[:10000]
-# y_test = y_test[:1000]
-
 es = EarlyStopping(monitor='val_loss', mode='min', verbose=1)
 
 model = Sequential()
