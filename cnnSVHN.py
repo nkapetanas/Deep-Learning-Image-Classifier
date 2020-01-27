@@ -90,6 +90,21 @@ def plot_confusion_matrix(confusion_matrix, target_names, normalize=False, title
     plt.show()
 
 
+def get_random_index_of_images():
+    indexes_for_ran_chosen_image_each_class = dict()
+    indexes_for_ran_chosen_image_each_class[1] = 9
+    indexes_for_ran_chosen_image_each_class[2] = 2
+    indexes_for_ran_chosen_image_each_class[3] = 3
+    indexes_for_ran_chosen_image_each_class[4] = 15
+    indexes_for_ran_chosen_image_each_class[5] = 5
+    indexes_for_ran_chosen_image_each_class[6] = 21
+    indexes_for_ran_chosen_image_each_class[7] = 14
+    indexes_for_ran_chosen_image_each_class[8] = 13
+    indexes_for_ran_chosen_image_each_class[9] = 1
+
+    return indexes_for_ran_chosen_image_each_class
+
+
 download_data()
 # squeeze_me= True -> Unit 1x1 matrix dimensions are squeezed to be scalars
 train_data_mat = loadmat(DOWNLOADED_FILENAME_TRAIN, squeeze_me=True)
